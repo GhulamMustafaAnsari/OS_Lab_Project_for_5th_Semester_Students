@@ -32,6 +32,14 @@ This project implements a complete CPU scheduling simulator with the following f
 
 ## 🚀 Quick Start
 
+### Quick Demo (Recommended for First Time)
+
+```bash
+python3 quickstart.py
+```
+
+This runs a quick demonstration showing FCFS, SJF, and Round Robin algorithms with sample data.
+
 ### Running the Main Simulator
 
 ```bash
@@ -80,8 +88,11 @@ OS_Lab_Project_for_5th_Semester_Students/
 ├── multithreading.py   # Multi-threading and synchronization demos
 ├── visualization.py    # Output formatting and visualization utilities
 ├── simulator.py        # Main interactive simulator
+├── quickstart.py       # Quick demonstration script
 ├── examples.py         # Example use cases for each algorithm
 ├── tests.py           # Test suite for validation
+├── requirements.txt   # Python dependencies (none required)
+├── .gitignore         # Git ignore file
 └── README.md          # This file
 ```
 

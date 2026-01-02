@@ -17,14 +17,14 @@ class CPUScheduler:
         self.gantt_chart = []
         self.completed_processes = []
     
-    def schedule(self) -> Tuple[List[dict], List[Tuple[int, str]]]:
+    def schedule(self) -> Tuple[List[dict], dict, List[Tuple[int, int, str]]]:
         """
         Execute the scheduling algorithm
-        Returns: (statistics, gantt_chart)
+        Returns: (statistics, metrics, gantt_chart)
         """
         raise NotImplementedError("Subclass must implement schedule method")
     
-    def calculate_metrics(self):
+    def calculate_metrics(self) -> dict:
         """Calculate average metrics for all processes"""
         n = len(self.completed_processes)
         if n == 0:
@@ -41,7 +41,7 @@ class CPUScheduler:
             'total_processes': n
         }
     
-    def get_results(self):
+    def get_results(self) -> Tuple[List[dict], dict, List[Tuple[int, int, str]]]:
         """Get scheduling results including process statistics and metrics"""
         stats = [p.get_statistics() for p in self.completed_processes]
         metrics = self.calculate_metrics()
