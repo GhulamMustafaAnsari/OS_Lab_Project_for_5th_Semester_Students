@@ -1,0 +1,7 @@
+
+bash:
+    gcc main.c OS_Scheduler.c -o my_os_project -lpthread
+
+
+bash:
+    ./my_os_project
