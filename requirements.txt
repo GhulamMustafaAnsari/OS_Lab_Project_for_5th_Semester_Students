@@ -1,0 +1,6 @@
+# OS Lab Project - Multi-Threaded Process Management & CPU Scheduling Simulator
+# This project uses only Python standard library
+# No external dependencies required
+
+# Python version requirement
+# python>=3.6
